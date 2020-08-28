@@ -18,8 +18,8 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
 """Importing the dataset"""
-
-dataset = pd.read_csv('emails.csv')
+url = 'https://raw.githubusercontent.com/SwapnilAryan97/EmailSpamDetection/master/emails.csv
+dataset = pd.read_csv(url)
 print(dataset)
 row_size = dataset.shape[0]
 print(row_size)
